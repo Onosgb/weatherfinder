@@ -28,6 +28,7 @@ export class WeatherFinder implements OnInit {
   ngOnInit(): void {}
 
   searchWeather() {
+    if (!this.weatherName.length) return;
     this.weatherService
       .getWeather(this.weatherName)
       .subscribe((cityWeather) => {

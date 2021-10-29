@@ -1,7 +1,7 @@
 <div class="weather-data layout-column align-items-center mt-50">
   <section class="layout-row align-items-center justify-content-center">
       <input type="text" class="large ml-30" (input)="weatherName = $event.target.value; noResult = false;" placeholder="Dallas" data-test-id="app-input"/>
-      <button class="" data-test-id="submit-button" [disabled]="weatherName.length === 0" (click)="searchWeather()">Search</button>
+      <button class="" data-test-id="submit-button" (click)="searchWeather()">Search</button>
   </section>
 
   <section class="mt-20 layout-row align-items-center justify-content-center">
@@ -10,7 +10,7 @@
             <div class="mt-20 outlined">
               <i data-test-id="icon-sunny" class="material-icons" *ngIf="weather >= 20">wb_sunny</i>
               <i data-test-id="icon-cold" class="material-icons" *ngIf="weather < 20">ac_unit</i>
-              <span data-test-id="result-temperature" class="temperature">{{cityWeather.name}}</span>
+              <span data-test-id="result-temperature" class="temperature">{{cityWeather.weather}}</span>
             </div>
             <div class="mr-15 mb-15">
               <div data-test-id="result-wind" class="mt-20">
