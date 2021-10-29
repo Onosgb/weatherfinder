@@ -8,7 +8,7 @@
     <div class="card outlined">
          <div data-test-id="weather-details" class="card-text pt-10 layout-row justify-content-between" *ngIf="cityWeather">
             <div class="mt-20 outlined">
-              <i data-test-id="icon-sunny" class="material-icons" *ngIf="weather > 20">wb_sunny</i>
+              <i data-test-id="icon-sunny" class="material-icons" *ngIf="weather >= 20">wb_sunny</i>
               <i data-test-id="icon-cold" class="material-icons" *ngIf="weather < 20">ac_unit</i>
               <span data-test-id="result-temperature" class="temperature"></span>
             </div>
