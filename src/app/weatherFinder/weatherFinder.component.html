@@ -10,7 +10,7 @@
             <div class="mt-20 outlined">
               <i data-test-id="icon-sunny" class="material-icons" *ngIf="weather >= 20">wb_sunny</i>
               <i data-test-id="icon-cold" class="material-icons" *ngIf="weather < 20">ac_unit</i>
-              <span data-test-id="result-temperature" class="temperature"></span>
+              <span data-test-id="result-temperature" class="temperature">{{cityWeather.name}}</span>
             </div>
             <div class="mr-15 mb-15">
               <div data-test-id="result-wind" class="mt-20">
