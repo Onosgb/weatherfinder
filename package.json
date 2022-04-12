@@ -5,12 +5,20 @@
     "ng": "ng",
     "prestart": "npm install",
     "pretest": "npm install",
-    "start": "ng serve --host 0.0.0.0 --port 8000 --disable-host-check",
+    "start": "node server.js",
     "build": "ng build",
+    "heroku-postbuild": "ng build — prod",
     "test": "ng test"
+  },
+  "engines": {
+    "node": "x.x.x",
+    "npm": "x.x.x"
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~10.0.6",
+    "@angular/compiler-cli": "~10.0.9",
+    "typescript": "~3.9.5",
     "@angular-package/change-detection": "0.0.1",
     "@angular/common": "~10.0.9",
     "@angular/compiler": "~10.0.9",
