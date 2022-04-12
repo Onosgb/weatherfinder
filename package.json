@@ -16,8 +16,8 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "~10.0.6",
-    "@angular/compiler-cli": "~10.0.9",
+    "@angular/cli": "x.x.x",
+    "@angular/compiler-cli": "x.x.x",
     "typescript": "~3.9.5",
     "@angular-package/change-detection": "0.0.1",
     "@angular/common": "~10.0.9",
